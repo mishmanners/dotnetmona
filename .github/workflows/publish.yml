@@ -28,10 +28,10 @@ jobs:
       run: |
         dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/dotnetweb 
         
-    - name: 'Deploy to https://dotnetmona.azurewebsites.net/'
+    - name: 'Deploy to https://mishmanners.azurewebsites.net/'
       uses: azure/webapps-deploy@v2
       with: 
-        app-name: dotnetmona
+        app-name: mishmanners
         # Publish directly to Production for pushes into master
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
         package: ${{env.DOTNET_ROOT}}/dotnetweb 
