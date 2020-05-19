@@ -1,0 +1,18 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "ASP.NET Core";
+    var message = Request.Query["m"];
+    if (String.IsNullOrEmpty(message))
+    {
+        message = Model.Messages[1];
+    }
+    var asciiArt = AsciiArt.CreateDotnetMona(message);
+}
+<div class="cli">
+    <div class="cli-example">        
+@asciiArt
+    </div>
+</div>
+
+
