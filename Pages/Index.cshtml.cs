@@ -17,7 +17,12 @@ namespace dotnetweb.Pages
                     "Hello Build!",
                     "Would you like a Cup<T>?",
                     ".NET all the things!",
-                    "Would you like to play a game?"
+                    "Would you like to play a game?",
+                    "We need internet in Australia!!!",
+                    "Bill Gates is awesome",
+                    "Developers Developers Developers",
+                    "This is a really long string. We might have to wait a while for this string to eat donuts. DONUTS DONUTS DONUTS for all the Developres Developers Developers"
+                    
                 };
             }
         }

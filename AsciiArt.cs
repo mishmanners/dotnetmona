@@ -8,7 +8,7 @@ namespace dotnetweb
     public static class AsciiArt
     {
         // Distance between Mona and dotnet-bot
-        private const int SPACING = 26;
+        private const int SPACING = 28;
         // Start column for speech bubble
         private const int SPEECH_COL = 33;
 
