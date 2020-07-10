@@ -5,12 +5,6 @@ on:
   push:
     tags:
     - prod/*
-  workflow_dispatch:
-     inputs:
-       releaseType:
-         description: 'Where to release (dev, qa or prod)?'     
-         required: true
-         default: 'prod'
 
 jobs:
   azure:
