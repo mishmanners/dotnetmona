@@ -1,19 +1,18 @@
-name: Composite Run Setps
+name: Composite Run Steps
 on:
   push:
-    branches:
+    branches: 
       - master
       - 'releases/**'
   pull_request:
     branches:
-     - master
-
+      - master
+          
 jobs:
   build:
-   runs-on: windows-latest
-   steps:
-     - uses: actions/checkout@v2
-     - uses: octocat/say-hello@v1
-       with:
-         name: OctoCat
-       
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: octocat/say-hello@v1
+        with:
+          name : OctoCat
