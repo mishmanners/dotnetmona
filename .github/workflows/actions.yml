@@ -1,0 +1,9 @@
+name: Publish
+
+# Only run when code pushed to master
+on:
+  push:
+    tags:
+    - prod/*
+  inputs:
+    name: 
