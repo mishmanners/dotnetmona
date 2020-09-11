@@ -6,4 +6,13 @@ on:
     tags:
     - prod/*
   inputs:
-    name: 
+    name:
+      description: 'What's your name?'
+      default: 'No name provided'
+    runs:
+      using: "composite"
+      steps:
+        - run: echo Hello ${{ inputs.name }}.
+          shell: bash
+        - run: echo "Awesome as to meet you!"
+          shell: pwsh 
